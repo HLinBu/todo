@@ -1,0 +1,87 @@
+html,body{
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+}
+body{
+    background-color: #d6bfa3;
+}
+.login{
+    background: linear-gradient(-38deg,#d6bfa3 50% , #ae7f45 50%);
+}
+.bg-card{
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+}
+.coffee{
+    background-color: #ae7f45;
+}
+.verify{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+    width: 300px;
+    gap: 10px;
+}
+.block{
+    background-color: white;
+    cursor: pointer;
+}
+.click{
+    background-color: #ccc;
+}
+.grid{
+    display: grid;
+    width: 100%;
+    height: 350px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+.grid div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.img{
+    grid-area: img;
+    background-color: #ccc;
+}
+.title{
+    grid-area: title;
+    background-color: #ae7f45;
+}
+.content{
+    grid-area: content;
+    background-color: #d6bfa3;
+}
+.date{
+    grid-area: date;
+    background-color: #d6bfa3;
+}
+.cost{
+    grid-area: cost;
+    background-color: #ae7f45;
+}
+.link{
+    grid-area: link;
+    background-color: #ae7f45;
+}
+.cur{
+    cursor: pointer;
+}
+.selected{
+    background-color: #fddf85;
+}
+.img img,.preview{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.preview{
+    background-color: #ccc;
+    height: 226px;
+}
