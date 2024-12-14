@@ -1,87 +1,46 @@
-html,body{
-    min-height: 100%;
-    width: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  background: linear-gradient(lightgreen, lightseagreen);
+  overflow-y:hidden
 }
-body{
-    background-color: #d6bfa3;
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 48px;
+  text-align: center;
+  box-shadow: 0 0 10px lightseagreen;
 }
-.login{
-    background: linear-gradient(-38deg,#d6bfa3 50% , #ae7f45 50%);
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
-.bg-card{
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
+.header {
+  border-left: 10px solid black;
+  padding-left: 10px;
 }
-.coffee{
-    background-color: #ae7f45;
+.work {
+  background-color: rgba(144, 238, 144,0.1);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 5px lightgreen;
+  position: absolute;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  flex-wrap: wrap;
+  border-radius: 8px;
 }
-.verify{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 300px;
-    width: 300px;
-    gap: 10px;
+.box-wrap {
+  width: 300px;
 }
-.block{
-    background-color: white;
-    cursor: pointer;
-}
-.click{
-    background-color: #ccc;
-}
-.grid{
-    display: grid;
-    width: 100%;
-    height: 350px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5,1fr);
-    gap: 10px;
-    padding: 10px;
-    border: 1px solid #dee2e6;
-}
-.grid div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-.img{
-    grid-area: img;
-    background-color: #ccc;
-}
-.title{
-    grid-area: title;
-    background-color: #ae7f45;
-}
-.content{
-    grid-area: content;
-    background-color: #d6bfa3;
-}
-.date{
-    grid-area: date;
-    background-color: #d6bfa3;
-}
-.cost{
-    grid-area: cost;
-    background-color: #ae7f45;
-}
-.link{
-    grid-area: link;
-    background-color: #ae7f45;
-}
-.cur{
-    cursor: pointer;
-}
-.selected{
-    background-color: #fddf85;
-}
-.img img,.preview{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-.preview{
-    background-color: #ccc;
-    height: 226px;
+
+.box {
+  width: 30%;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 90px;
 }

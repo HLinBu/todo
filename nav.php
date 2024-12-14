@@ -1,22 +1,22 @@
-<nav class="navbar navbar-expand-sm navbar-dark coffee">
-    <div class="container">
-        <a href="show.php" class="navbar-brand">咖啡商品展示系統</a>
-        <div class="navbar-collapse collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="sell.php?type=style" class="nav-link">上架商品</a>
-                </li>
-                <?php if($_SESSION['user']['permission']){?>
-                    <li class="nav-item">
-                        <a href="account.php" class="nav-link">會員管理</a>
-                    </li>
-                <?php }?>
+<?php
+if (empty($_SESSION["user"])) {
+    echo "<script>alert('未登入');location.href='index.php'</script>";
+}
+?>
+<div class="navbar-static-top navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a href="" class="brand"><img src="logo.png" style="height: 20px;"></a>
+            <ul class="nav">
+                <li><a href="work_hidden.php">TODO 工作表</a></li>
+                <li><a href="chart.php">統計圖</a></li>
+                <?php if ($_SESSION["user"]["level"] == 1) { ?>
+                    <li><a href="user_main.php">會員網站後台管理</a></li>
+                <?php } ?>
             </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="log.php" class="btn btn-outline-light">登出</a>
-                </li>
+            <ul class="pull-right nav">
+                <li><a href="logout.php">登出</a></li>
             </ul>
         </div>
     </div>
-</nav>
+</div><br>
